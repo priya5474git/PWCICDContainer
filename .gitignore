@@ -1,0 +1,7 @@
+node_modules/
+test-artifacts/
+playwright-report/
+test-results/html-report/
+test-results/results.json
+test-results/readable-summary.txt
+*.log

@@ -1,0 +1,20 @@
+{
+  "name": "pwcicdcontainer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed && playwright show-report test-results/html-report",
+    "test:report:headed": "set WAIT_FOR_USER_CLOSE=true&& playwright test tests/employeereport.spec.js --headed",
+    "report": "playwright show-report test-results/html-report",
+    "autopush": "node scripts/auto-push-on-save.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.0"
+  }
+}
